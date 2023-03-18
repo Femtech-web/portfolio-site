@@ -20,7 +20,7 @@ const Box = ({ icon, title, subtitle, darkMode}) => {
 const Contact = ({ darkMode }) => {
   return (
     <div className={`${darkMode ? 'bg-[#0F1724] text-gray-200' : 'text-slate-900' } 
-        flex md:flex-row flex-col md:px-[10%] px-[2%] justify-center items-center py-[5%]`}>
+        flex md:flex-row flex-col md:px-[10%] px-[2%] justify-center items-center md:py-[5%] py-[10%]`}>
         <Box icon={ <MdEmail fontSize={40} className='cursor-pointer '/>}
             title='Email' subtitle='BossFemzy10@gmail.com' darkMode={darkMode}/>
         <Box icon={ <BsPhoneLandscape fontSize={40} className='cursor-pointer '/>}

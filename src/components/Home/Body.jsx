@@ -25,15 +25,15 @@ const Body = ({ darkMode}) => {
                     gt md:text-xl text-[1.4rem]`}>Skillful Frontend and backend Web Developer. specialize in competent 
                     web development skills with focus on collaboration communication and passion.
                 </p>
-                <div className='flex mt-4'>
+                <div className='flex mt-4 pr-4'>
                     <a href="https://wa.me/08149118596" target="_blank" rel="noopener noreferrer">
-                        <button className='flex items-center gt text-xl mr-3 shadow-md transition-all
+                        <button className='flex items-center gt md:text-xl text-md mr-3 shadow-md transition-all
                             bg-indigo-500 px-3 shadow-indigo-400 py-2 rounded-md hover:bg-indigo-400 text-white'>Get in touch
                             <BsCursorFill className='ml-2'/>
                         </button>
                     </a>
                     <a href="https://drive.google.com/file/d/1N1iolHmVkJUhUczOkIi2-ODEtAU9eHCw/view?usp=share_link" target="_blank" rel="noopener noreferrer">
-                        <button className='flex gt  items-center text-xl border-2 px-3 py-2 hover:text-white transition-all
+                        <button className='flex gt  items-center md:text-xl text-md border-2 px-3 py-2 hover:text-white transition-all
                             rounded-md shadow-md border-indigo-500 hover:bg-blue-400 hover:border-blue-400 '>Download cv
                             <BsDownload className='ml-2'/>
                         </button>
@@ -42,12 +42,12 @@ const Body = ({ darkMode}) => {
             </div>
             <div className=' w-full md:w-[50%] relative h-[50vh] md:my-0 my-[11%]'>
                 <div className="border-2  shadow-indigo-500 shadow-sm w-[350px] h-[350px]
-                     border-indigo-200 rounded-full absolute 
+                     border-indigo-200 rounded-full absolute md:left-0 left-[1%]
                      md:-top-[5%]  top-[10%] md:right-[15%] right-[4%] md:h-[400px] md:w-[400px]"></div>
                 <img src="/images/pic.jpg" alt="" className='grayscale 
                     h-100 w-[40%] rounded-full absolute md:-top-[10%] top-[5%] left-[5%]'/>
-                <div className=" bg-gradient-to-r from-[#9060DA] to-[#28A2CF] w-[130px] h-[130px]
-                    rounded-full absolute md:-bottom-[15%] -bottom-[10%] right-[13%] md:h-[150px] md:w-[150px]"></div>
+                <div className=" bg-gradient-to-r from-[#9060DA] to-[rgb(40,162,207)] w-[130px] h-[130px]
+                    rounded-full absolute md:-bottom-[15%] -bottom-[7%] right-[10%] md:h-[150px] md:w-[150px]"></div>
             </div>
             <div className="md:flex hidden flex-col justify-evenly mr-[2%]">
             <a href="https://web.facebook.com/profile.php?id=100007274899219" target="_blank" rel="noopener noreferrer">

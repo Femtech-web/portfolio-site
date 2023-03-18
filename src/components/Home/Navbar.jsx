@@ -55,10 +55,10 @@ const Navbar = ({ handleClick, darkMode, project }) => {
         <div className="flex relative">
           {toggleMenu 
           ? <AiOutlineClose fontSize={28} 
-          className={`${darkMode || project && 'text-gray-200'} text-black md:hidden cursor-pointer mr-3`}
+          className={`${darkMode || project ? 'text-gray-200' : 'text-black'} md:hidden cursor-pointer mr-3`}
           onClick={(e) => setToggleMenu(false)} />
            : <HiMenuAlt4 fontSize={28} 
-           className={`${darkMode || project && 'text-gray-200'} text-black md:hidden cursor-pointer mr-3`}
+           className={`${darkMode || project ? 'text-gray-200' : 'text-black'}  md:hidden cursor-pointer mr-3`}
             onClick={(e) => setToggleMenu(true)}/>}
       </div>
       {toggleMenu && 

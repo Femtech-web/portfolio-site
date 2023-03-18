@@ -52,15 +52,16 @@ const Body = () => {
                     </ul>
                     <div className='flex my-4 '>
                         <a href="https://shopem-7029.onrender.com" target="_blank" rel="noopener noreferrer">
-                            <button className='flex justify-center transition-all hover:bg-indigo-400 items-center gt text-gray-200 rounded-full
-                                w-[150px] p-3 border-2 border-indigo-400'>
+                            <button className='flex justify-center transition-all
+                             hover:bg-indigo-400 items-center gt text-gray-200 rounded-full
+                                md:w-[150px] w-[135px] p-3 border-2 border-indigo-400'>
                                 Demo
                                 <BsCursorFill fontSize={20} className='ml-3 text-gray-200'/>
                             </button>
                         </a>
                         <a href="https://github.com/Femtech-web/SHOPEM" target="_blank" rel="noopener noreferrer">
                             <button className='flex justify-center transition-all hover:bg-indigo-400 items-center ml-3 gt text-gray-200 rounded-full
-                                w-[150px] p-3 border-2 border-indigo-400'>
+                                md:w-[150px] w-[135px] p-3 border-2 border-indigo-400'>
                                 Github
                                 <BsGithub fontSize={20} className='ml-3 text-gray-200'/>
                             </button>
@@ -106,14 +107,14 @@ const Body = () => {
                     <div className='flex my-4 '>
                         <a href="https://crypt-blockchain.onrender.com" target="_blank" rel="noopener noreferrer">
                             <button className='flex transition-all justify-center hover:bg-indigo-400 items-center gt text-gray-200 rounded-full
-                                w-[150px] p-3 border-2 border-indigo-400'>
+                                md:w-[150px] w-[135px] p-3 border-2 border-indigo-400'>
                                 Demo
                                 <BsCursorFill fontSize={20} className='ml-3 text-gray-200'/>
                             </button>
                         </a>
                         <a href="https://github.com/Femtech-web/blockchain" target="_blank" rel="noopener noreferrer">
                             <button className='flex justify-center transition-all hover:bg-indigo-400 items-center ml-3 gt text-gray-200 rounded-full
-                                w-[150px] p-3 border-2 border-indigo-400'>
+                                md:w-[150px] w-[135px] p-3 border-2 border-indigo-400'>
                                 Github
                                 <BsGithub fontSize={20} className='ml-3 text-gray-200'/>
                             </button>
@@ -158,14 +159,14 @@ const Body = () => {
                     <div className='flex my-4 '>
                         <a href="https://bible-app.onrender.com" target="_blank" rel="noopener noreferrer">
                             <button className='flex justify-center transition-all hover:bg-indigo-400 items-center gt text-gray-200 rounded-full
-                                w-[150px] p-3 border-2 border-indigo-400'>
+                                md:w-[150px] w-[135px] p-3 border-2 border-indigo-400'>
                                 Demo
                                 <BsCursorFill fontSize={20} className='ml-3 text-gray-200'/>
                             </button>
                         </a>
                         <a href="https://github.com/Femtech-web/bible-webApp" target="_blank" rel="noopener noreferrer">
                             <button className='flex justify-center transition-all hover:bg-indigo-400 items-center ml-3 gt text-gray-200 rounded-full
-                                w-[150px] p-3 border-2 border-indigo-400'>
+                                md:w-[150px] w-[135px] p-3 border-2 border-indigo-400'>
                                 Github
                                 <BsGithub fontSize={20} className='ml-3 text-gray-200'/>
                             </button>
