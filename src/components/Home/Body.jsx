@@ -40,28 +40,28 @@ const Body = ({ darkMode}) => {
                     </a>
                 </div>
             </div>
-            <div className=' w-full md:w-[50%] relative h-[50vh] md:my-0 my-[11%] md:left-7 left-0'>
+            <div className=' w-full md:w-[40%] relative h-[50vh] md:my-0 my-[11%] left-0'>
                 <div className="border-2  shadow-indigo-500 shadow-sm w-[330px] h-[330px]
                      border-indigo-200 rounded-full absolute md:left-0 
                      md:-top-[5%]  top-[10%] md:right-[10%] right-[4%] md:h-[400px] md:w-[400px]"></div>
                 <img src="/images/pic.jpg" alt="" className='grayscale 
-                    h-100 md:w-[30%] w-[40%] rounded-full absolute md:-top-[10%] top-[3%] left-[5%]'/>
+                    h-100 w-[40%] rounded-full absolute md:-top-[10%] top-[7%] md:left-[1%] left-[15%]'/>
                 <div className=" bg-gradient-to-r from-[#9060DA] to-[rgb(40,162,207)] w-[130px] h-[130px]
-                    rounded-full absolute md:-bottom-[15%] -bottom-[7%] md:right-[30%] right-[15%] md:h-[150px] md:w-[150px]"></div>
+                    rounded-full absolute  md:-bottom-[20%] -bottom-[10%] md:right-[25%] right-[10%] md:h-[150px] md:w-[150px]"></div>
             </div>
-            <div className="md:flex hidden flex-col justify-evenly mr-[2%]">
-            <a href="https://web.facebook.com/profile.php?id=100007274899219" target="_blank" rel="noopener noreferrer">
-                <BsFacebook className='mb-6 hover:scale-75 transition-all cursor-pointer'fontSize={24}/>
-            </a>
-            <a href="https://www.instagram.com/bossfemzy" target="_blank" rel="noopener noreferrer"> 
-                <BsInstagram className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
-            </a>
-            <a href="https://twitter.com/Fem_webDev" target="_blank" rel="noopener noreferrer">
-                 <BsTwitter className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
-            </a>
-            <a href="https://wa.me/08149118596" target="_blank" rel="noopener noreferrer">
-                <BsWhatsapp className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
-            </a>
+            <div className="md:flex hidden  flex-col justify-evenly ">
+                <a href="https://web.facebook.com/profile.php?id=100007274899219" target="_blank" rel="noopener noreferrer">
+                    <BsFacebook className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
+                </a>
+                <a href="https://www.instagram.com/bossfemzy" target="_blank" rel="noopener noreferrer"> 
+                    <BsInstagram className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
+                </a>
+                <a href="https://twitter.com/Fem_webDev" target="_blank" rel="noopener noreferrer">
+                    <BsTwitter className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
+                </a>
+                <a href="https://wa.me/08149118596" target="_blank" rel="noopener noreferrer">
+                    <BsWhatsapp className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
+                </a>
             </div>
         </div>
     </div>
