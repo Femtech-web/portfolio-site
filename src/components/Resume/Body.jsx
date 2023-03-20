@@ -32,9 +32,9 @@ const Body = ({ darkMode }) => {
                 <h3 className={`${darkMode ? ' text-gray-200' : 'text-slate-800' } gt text-3xl mb-4 font-medium`}>Personal Projects</h3>
 
                 <ul className={`list-disc md:ml-0 ml-1 ${darkMode ? ' text-gray-200' : 'text-slate-600' }`}>
-                    <li className='gt  md:text-xl text-2xl'>Improved in problem definition, planning and providing solutions</li>
-                    <li className=' gt  md:text-xl text-2xl '>Improved in time management and system maintenance</li>
-                    <li className='gt  md:text-xl text-2xl '>Developed several successful projects, personal and collaborative.</li>
+                    <li className='gt  text-xl'>Improved in problem definition, planning and providing solutions</li>
+                    <li className=' gt  text-xl'>Improved in time management and system maintenance</li>
+                    <li className='gt  text-xl'>Developed several successful projects, personal and collaborative.</li>
                 </ul>
             </div>
 
@@ -43,11 +43,11 @@ const Body = ({ darkMode }) => {
                 <h6 className={`${darkMode ? ' text-gray-200' : 'text-slate-700' } gt text-xl mb-2 font-medium`}>Femtech, August 2022 - December 2022</h6>
 
                 <ul className={`${darkMode ? ' text-gray-200' : 'text-slate-600' } list-disc`}>
-                    <li className='gt md:text-xl  text-2xl'>Demonstrated ability to manage multiple tasks while remaining adaptable and flexible</li>
-                    <li className='gt md:text-xl  text-2xl'>Experienced with social media and communication platforms</li>
-                    <li className='gt md:text-xl  text-2xl'>Defined problems, collected data, established facts and validated conclusions.</li>
-                    <li className='gt md:text-xl  text-2xl'>Detected and reported larger technical issues.</li>
-                    <li className='gt md:text-xl  text-2xl'>Skilled in using various web technologies such as React, 
+                    <li className='gt text-xl'>Demonstrated ability to manage multiple tasks while remaining adaptable and flexible</li>
+                    <li className='gt text-xl'>Experienced with social media and communication platforms</li>
+                    <li className='gt text-xl'>Defined problems, collected data, established facts and validated conclusions.</li>
+                    <li className='gt text-xl'>Detected and reported larger technical issues.</li>
+                    <li className='gt text-xl'>Skilled in using various web technologies such as React, 
                         Redux, Mongo-DB, express, Node-JS, Bootstrap etc.</li>
                 </ul>
             </div>
@@ -63,17 +63,17 @@ const Body = ({ darkMode }) => {
                 </div>
             </div>
 
-            <h3 className={`${darkMode ? ' text-gray-200' : 'text-slate-800' } gt text-3xl md:mb-4 mb-8`}>National Diploma in computer science 
+            <h3 className={`${darkMode ? ' text-gray-200' : 'text-slate-800' } gt md:text-3xl text-2xl md:mb-4 mb-8`}>National Diploma in computer science 
                 OGITECH (Ogun state institute of Technology), Igbesa, Ogun State.
             </h3>
 
             <div className="flex flex-col mb-5 md:ml-0 ml-1">
                 <h3 className={`${darkMode ? ' text-gray-200' : 'text-slate-800' } gt text-3xl mb-2 font-medium`}>Soft Skills</h3>
                 <ul className={`${darkMode ? ' text-gray-200' : 'text-slate-600' } list-disc`}>
-                    <li className='gt md:text-xl text-2xl'>Good communication skills</li>
-                    <li className='gt md:text-xl text-2xl'>Quick learning and Adapting skills</li>
-                    <li className='gt md:text-xl text-2xl'>Problem solving skills</li>
-                    <li className='gt md:text-xl text-2xl'>Good collaborative skills</li>
+                    <li className='gt text-xl'>Good communication skills</li>
+                    <li className='gt text-xl'>Quick learning and Adapting skills</li>
+                    <li className='gt text-xl'>Problem solving skills</li>
+                    <li className='gt text-xl'>Good collaborative skills</li>
                 </ul>
             </div>
         </div>

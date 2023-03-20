@@ -40,9 +40,9 @@ const Body = ({ darkMode}) => {
                     </a>
                 </div>
             </div>
-            <div className=' w-full md:w-[50%] relative h-[50vh] md:my-0 my-[11%] '>
+            <div className=' w-full md:w-[50%] relative h-[50vh] md:my-0 my-[11%] md:left-7 left-0'>
                 <div className="border-2  shadow-indigo-500 shadow-sm w-[330px] h-[330px]
-                     border-indigo-200 rounded-full absolute md:left-0 md:ml-2
+                     border-indigo-200 rounded-full absolute md:left-0 
                      md:-top-[5%]  top-[10%] md:right-[10%] right-[4%] md:h-[400px] md:w-[400px]"></div>
                 <img src="/images/pic.jpg" alt="" className='grayscale 
                     h-100 md:w-[30%] w-[40%] rounded-full absolute md:-top-[10%] top-[3%] left-[5%]'/>

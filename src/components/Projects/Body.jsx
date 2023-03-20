@@ -30,7 +30,7 @@ const Body = () => {
             <div className='flex flex-col md:flex-row md:px-[7%] px-4 py-[8%]  white-glassmorphism mb-[5%]'>
                 <div className='flex flex-col justify-center items-start md:w-[50%] w-full'>
                     <h1 className='text-gray-200 mb-4 font-semibold  text-[1.6rem] gt'>Shopem E-commerce Site</h1>
-                    <p className="text-gray-200 gt text-xl">Shopem E-commerce Website is a Responsive web store. They 
+                    <p className="text-gray-200 gt md:text-xl text-lg">Shopem E-commerce Website is a Responsive web store. They 
                     deal in selling of Male, Female and Unisex Fashion Outfits. customers can Register and Login, View 
                     Preferred Choice of Outfit from Different Brands, Purchase Outfit and It will be delivered to them in a short while.
                     It has a Register and Login Page, HomePage, ProductList page, Individual Product Page, Cart Page, Customer 
@@ -85,7 +85,7 @@ const Body = () => {
                 </div>
                 <div className='flex flex-col justify-center items-start md:w-[50%] w-full md:ml-7 ml-2'>
                     <h1 className='text-gray-200 mb-4 font-semibold text-[1.6rem] gt'>Crypt Decentralized App</h1>
-                    <p className="text-gray-200 gt text-xl">Crypt Web App is a Decentralized Application which runs on the Blockchain.
+                    <p className="text-gray-200 gt md:text-xl text-lg">Crypt Web App is a Decentralized Application which runs on the Blockchain.
                     It was Built for the purpose of Security, Decentralization and trust. It enables Users after Connecting there wallet through Metamask
                     to send Ethers/Tokens to any other Crypto Address anywhere around the world. 
                     Metamask enables Users to Sign in there Ethereum Wallet Address to connect to the blockchain for transactions
@@ -132,7 +132,7 @@ const Body = () => {
             <div className='flex flex-col md:flex-row md:px-[7%] px-4 py-[8%] white-glassmorphism mb-[5%]'>
                 <div className='flex flex-col justify-center items-start md:w-[50%] w-full'>
                     <h1 className='text-gray-200 mb-4 font-semibold text-[1.6rem] gt'>Bible Web App</h1>
-                    <p className="text-gray-200 gt text-xl">Bible Web App was not much of a beautiful site but rather it was used to
+                    <p className="text-gray-200 gt md:text-xl text-lg">Bible Web App was not much of a beautiful site but rather it was used to
                     implement some really important backend functions such like Authentication and security.
                     It is a web App with which enables Users to Register then login before accessing the main Homepage interface
                     which list's some bible verse foe different situations of Users. Strictly only when Users have logged before they can access the

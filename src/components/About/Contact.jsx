@@ -3,10 +3,10 @@ import React from 'react'
 const Contact = ({ darkMode}) => {
   return (
     <div className={`${darkMode ? 'bg-[#0F1724] text-gray-200' : 'bg-[#fff]' } 
-        flex flex-col justify-center items-center px-[7%] py-[5%]`}>
+        flex flex-col justify-center items-center md:px-[7%] px-[4%] py-[5%]`}>
         <div className="h-0.5 w-[90px]  bg-indigo-600 mb-5"></div>
             <div className="flex w-full  rounded-xl flex-col justify-center items-center md:px-[15%] px-2">
-                <h1 className={` gt text-center text-6xl font-bold mb-4`}>Lets Connect For Business</h1>
+                <h1 className={` gt text-center md:text-6xl text-5xl font-bold mb-4`}>Lets Connect For Business</h1>
                 <p className={`${darkMode ? ' text-gray-200' : 'text-slate-600' } 
                     text-xl text-center md:px-[15%] px-[5%] gt`}>The technological revolution is changing aspects of our lives 
                     and the society itself. Here at Fem-Dev, I have got you fully Covered.

@@ -8,12 +8,13 @@ import {RiStackLine, RiComputerLine} from 'react-icons/ri'
 
 const Box = ({ icon, title, subtitle}) => {
     return (
-            <div className='flex flex-col bg-[#3D3E42] md:p-5 m-5 p-6 md:w-[90%] w-[97%] justify-center 
+            <div className='flex flex-col bg-[#3D3E42] 
+              md:p-5  m-5 p-7 md:w-[90%] w-[97%] justify-center 
               rounded-xl items-center cursor-pointer'>
             <div className="w-[100px]  h-[100px] rounded-full
              bg-slate-500 flex justify-center mb-6 items-center">{icon}</div>
-            <h3 className="text-gray-200 mb-4 text-center font-semibold text-3xl md:text-[1.4rem] gt">{title}</h3>
-            <p className="text-gray-200 gt text-center text-xl md:text-md">{subtitle}</p>
+            <h3 className="text-gray-200 mb-4 text-center font-semibold text-[1.4rem] gt">{title}</h3>
+            <p className="text-gray-200 gt text-center text-base whitespace-normal">{subtitle}</p>
             </div>
     )
 }
@@ -30,17 +31,17 @@ const Services = () => {
 
         <div className="grid md:grid-cols-3 grid-cols-1">
             <Box icon={<RiComputerLine fontSize={30} className='text-white'/>} 
-            title='Frontend Web-Development'
+            title='Frontend Web Development'
             subtitle='I specialize in building Beautiful and Dynamic User 
             Interface, leading to an Excellent User Experience'
             />
             <Box icon={<AiOutlineDatabase fontSize={30} className='text-white'/>} 
-            title='Backend Web-Development'
+            title='Backend Web Development'
             subtitle='I specialize in Implementing logics at the 
             backend for easy storage and fetching of data and other backend operations'
             />
             <Box icon={<RiStackLine fontSize={30} className='text-white'/>} 
-            title='Fullstack Web-Development'
+            title='Fullstack Web Development'
             subtitle='I can play the role of a frontend and backend software engineer 
             interchangeably, giving you a flexible and easy service rendation'
             />

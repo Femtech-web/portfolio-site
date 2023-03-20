@@ -5,14 +5,14 @@ import { GiDart } from 'react-icons/gi';
 
 const Box = ({ icon, title, subtitle, darkMode}) => {
     return (
-        <div className='flex flex-col md:mr-5 mr-0 md:mb-0 mb-[15%] px-[2%] py-3 items-center shadow-xl 
+        <div className='flex flex-col md:mr-5 mr-0 md:mb-0 mb-[15%] px-[1%] py-3 items-center shadow-xl 
             white-glassmorphism rounded-xl'>
                 <div className=' flex justify-center items-center mb-5
                     w-[140px] h-[140px] border-2 border-indigo-500 rounded-full'>{ icon }
                 </div>
                 <h3 className=' gt md:text-3xl text-4xl mb-3 tracking-widest font-bold'>{title}</h3>
                 <p className={`${darkMode ? ' text-gray-200' : 'text-slate-600' } 
-                    gt px-[20%] text-center md:text-lg text-xl`}>{subtitle}</p>
+                    gt md:px-[20%] px-[10%] text-center md:text-lg text-xl`}>{subtitle}</p>
         </div>
     )
 };
