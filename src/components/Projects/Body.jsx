@@ -4,7 +4,6 @@ import Navbar from '../Home/Navbar';
 import Footer from '../Home/Footer';
 import { IndProject } from '../Home/Projects';
 import { projectData } from '../../dummy';
-import { BsGithub, BsCursorFill } from 'react-icons/bs';
 
 const Body = () => {
   return (
