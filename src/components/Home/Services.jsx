@@ -1,21 +1,17 @@
 import React from 'react';
-import {AiOutlineDatabase,
-AiOutlineAppstore
-} from 'react-icons/ai';
-import {BsDatabaseFillX} from 'react-icons/bs';
-import {DiResponsive} from 'react-icons/di';
-import {RiStackLine, RiComputerLine} from 'react-icons/ri'
+import { servicesData } from '../../dummy';
 
 const Box = ({ icon, title, subtitle}) => {
     return (
-            <div className='flex flex-col bg-[#3D3E42] 
-              md:p-5  m-5 p-7 md:w-[90%] w-[97%] justify-center 
-              rounded-xl items-center cursor-pointer'>
-            <div className="w-[100px]  h-[100px] rounded-full
-             bg-slate-500 flex justify-center mb-6 items-center">{icon}</div>
-            <h3 className="text-gray-200 mb-4 text-center font-semibold text-[1.4rem] gt">{title}</h3>
-            <p className="text-gray-200 gt text-center text-base whitespace-normal">{subtitle}</p>
-            </div>
+      <div className='flex flex-col bg-[#3D3E42] hover:shadow-inner hover:shadow-indigo-500 transition-all
+        md:p-5  m-5 p-7 md:w-[90%] w-[97%] justify-center group
+        rounded-xl items-center cursor-pointer'>
+      <div className="w-[100px]  h-[100px] rounded-full transition-all
+        bg-slate-500 flex justify-center mb-6 items-center 
+        group-hover:shadow-inner group-hover:shadow-gray-200">{icon}</div>
+      <h3 className="text-gray-200 mb-4 text-center font-semibold text-[1.4rem] gt">{title}</h3>
+      <p className="text-gray-200 gt text-center text-base whitespace-normal">{subtitle}</p>
+      </div>
     )
 }
 
@@ -30,36 +26,14 @@ const Services = () => {
         </div>
 
         <div className="grid md:grid-cols-3 grid-cols-1">
-            <Box icon={<RiComputerLine fontSize={30} className='text-white'/>} 
-            title='Frontend Web Development'
-            subtitle='I specialize in building Beautiful and Dynamic User 
-            Interface, leading to an Excellent User Experience'
-            />
-            <Box icon={<AiOutlineDatabase fontSize={30} className='text-white'/>} 
-            title='Backend Web Development'
-            subtitle='I specialize in Implementing logics at the 
-            backend for easy storage and fetching of data and other backend operations'
-            />
-            <Box icon={<RiStackLine fontSize={30} className='text-white'/>} 
-            title='Fullstack Web Development'
-            subtitle='I can play the role of a frontend and backend software engineer 
-            interchangeably, giving you a flexible and easy service rendation'
-            />
-            <Box icon={<AiOutlineAppstore fontSize={30} className='text-white'/>} 
-            title='Web-Apps Developement'
-            subtitle='I also specialize in the development of highly 
-            functional and flexible Web apps for every of your needs. you can trust me on this! '
-            />
-            <Box icon={<BsDatabaseFillX fontSize={30} className='text-white'/>} 
-            title='Distributted Apps (DAPPS)'
-            subtitle='Web 3.0 Technolology has the ability to change the internet now and in the future.
-            I build decentralized apps which can be connected with the blockchain through smart contracts.'
-            />
-            <Box icon={<DiResponsive fontSize={35} className='text-white'/>} 
-            title='Responsive Web Service'
-            subtitle='I not only just render Web Services but deliver Responsive Web Service which can be fully 
-            suitable and on both Desktop and Mobile Devices, giving you a great User Experience'
-            />
+        {servicesData.map((item, index) => (
+          <Box  
+           key={index}
+           icon={item.icon}
+           title={item.title}
+           subtitle={item.subtitle}
+          />
+        ))}
         </div>
     </div>
     

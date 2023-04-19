@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ToggleContext } from '../../context/context';
 import 'animate.css';
 import { BsCursorFill, 
 BsDownload, 
@@ -8,6 +9,8 @@ BsWhatsapp,
 BsTwitter  } from 'react-icons/bs';
 
 const Body = ({ darkMode}) => {
+    const { mobile } = useContext(ToggleContext);
+
   return (
     <div className={`${darkMode && 'bg-[#0F1724]'} flex items-start w-full md:h-[89vh] md:py-0 md:pt-0 pt-[15%]`}>
         <div className={`flex  md:flex-row flex-col justify-evenly animate__animated animate__fadeIn
@@ -40,7 +43,8 @@ const Body = ({ darkMode}) => {
                     </a>
                 </div>
             </div>
-            <div className=' w-full md:w-[40%] relative h-[50vh] md:my-0 my-[11%] left-0'>
+
+           {!mobile ? <div className=' w-full md:w-[40%] relative h-[50vh] md:my-0 my-[11%] left-0'>
                 <div className="border-2  shadow-indigo-500 shadow-sm w-[330px] h-[330px]
                      border-indigo-200 rounded-full absolute md:left-0 
                      md:-top-[5%]  top-[10%] md:right-[10%] right-[4%] md:h-[400px] md:w-[400px]"></div>
@@ -48,7 +52,15 @@ const Body = ({ darkMode}) => {
                     h-100 w-[40%] rounded-full absolute md:-top-[10%] top-[7%] md:left-[1%] left-[15%]'/>
                 <div className=" bg-gradient-to-r from-[#9060DA] to-[rgb(40,162,207)] w-[130px] h-[130px]
                     rounded-full absolute  md:-bottom-[20%] -bottom-[10%] md:right-[25%] right-[10%] md:h-[150px] md:w-[150px]"></div>
-            </div>
+            </div> :
+            <div className=' flex justify-center items-center pt-[15%] py-[10%] px-[5%]'>
+                <div className={`w-[100%] rounded-full relative ${darkMode ? 'border-slate-700' : 'border-indigo-500'} 
+                    border-[10px] h-[100%] flex items-center justify-center`}>
+                <img src="/images/pic.jpg" alt="" className='grayscale 
+                h-100 w-[100%] rounded-full'/>
+                </div>
+            </div>}
+
             <div className="md:flex hidden  flex-col justify-evenly ">
                 <a href="https://web.facebook.com/profile.php?id=100007274899219" target="_blank" rel="noopener noreferrer">
                     <BsFacebook className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>

@@ -103,5 +103,14 @@ body {
   }
 }
 
+@media screen and (max-width: 480px){
+   .slick-next{
+      right: 5px;
+  }
 
+  .slick-prev{
+    left: 5px;
+  }
+   
+}
 
