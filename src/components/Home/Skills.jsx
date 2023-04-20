@@ -1,17 +1,5 @@
 import React from 'react';
-import { DiHtml5, DiCss3,
-DiJavascript, DiBootstrap,
-DiNodejs, DiDatabase,
-DiMongodb, DiGit,
-DiGithubBadge, DiMailchimp,
-DiNpm, DiJqueryLogo,
-DiReact, DiFirebase} from 'react-icons/di';
-import { TbBrandNextjs } from 'react-icons/tb';
-import {SiMui, SiSolidity,
-SiTailwindcss, SiPassport,
-SiExpress, SiAuth0,
-SiRedux,
-SiWeb3Dotjs} from 'react-icons/si';
+import { skillsData, skillsData2 } from '../../dummy';
 
 
 const Box = ({ icon, title}) => {
@@ -35,31 +23,14 @@ const Skills = ({ darkMode }) => {
             </div>
             <div className="flex flex-col ">
                 <div className="flex swipe mb-10">
-                    <Box icon={ <DiHtml5 fontSize={80} className='text-slate-500 mb-4'/> } title='HTML' />
-                    <Box icon={ <DiCss3 fontSize={80} className='text-slate-500 mb-4'/> } title='CSS' />
-                    <Box icon={ <DiJavascript fontSize={80} className='text-slate-500 mb-4'/> } title='Javascript' />
-                    <Box icon={ <DiReact fontSize={80} className='text-slate-500 mb-4'/> } title='React' />
-                    <Box icon={ <TbBrandNextjs fontSize={80} className='text-slate-500 mb-4'/> } title='Nextjs' />
-                    <Box icon={ <DiBootstrap fontSize={80} className='text-slate-500 mb-4'/> } title='Bootstrap' />
-                    <Box icon={ <SiTailwindcss fontSize={80} className='text-slate-500 mb-4'/> } title='TailwindCss' />
-                    <Box icon={ <DiJqueryLogo fontSize={80} className='text-slate-500 mb-4'/> } title='JQuery' />
-                    <Box icon={ <SiMui fontSize={80} className='text-slate-500 mb-4'/> } title='MaterialUi' />
-                    <Box icon={ <SiAuth0 fontSize={80} className='text-slate-500 mb-4'/> } title='Auth0' />
-                    <Box icon={ <SiSolidity fontSize={80} className='text-slate-500 mb-4'/> } title='Solidity' />
+                    {skillsData.map((item, index) => (
+                    <Box key={index} icon={item.icon} title={item.title } />
+                    ))}
                 </div>
                 <div className="flex swipe-back ">
-                    <Box icon={ <DiNodejs fontSize={80} className='text-slate-500 mb-4'/> } title='NodeJs' />
-                    <Box icon={ <DiMongodb fontSize={80} className='text-slate-500 mb-4'/> } title='MongoDb' />
-                    <Box icon={ <DiNpm fontSize={80} className='text-slate-500 mb-4'/> } title='Npm' />
-                    <Box icon={ <SiExpress fontSize={80} className='text-slate-500 mb-4'/> } title='ExpressJs' />
-                    <Box icon={ <SiRedux fontSize={80} className='text-slate-500 mb-4'/> } title='ReduxToolkit' />
-                    <Box icon={ <DiDatabase fontSize={80} className='text-slate-500 mb-4'/> } title='Mongoose' />
-                    <Box icon={ <DiGithubBadge fontSize={80} className='text-slate-500 mb-4'/> } title='Github' />
-                    <Box icon={ <DiGit fontSize={80} className='text-slate-500 mb-4'/> } title='Git' />
-                    <Box icon={ <DiFirebase fontSize={80} className='text-slate-500 mb-4'/> } title='Firebase' />
-                    <Box icon={ <SiPassport fontSize={80} className='text-slate-500 mb-4'/> } title='PassportJs' />
-                    <Box icon={ <SiWeb3Dotjs fontSize={80} className='text-slate-500 mb-4'/> } title='Web3.Js' />
-                    <Box icon={ <DiMailchimp fontSize={80} className='text-slate-500 mb-4'/> } title='Mailchimp' />
+                    {skillsData2.map((item, index) => (
+                    <Box key={index} icon={item.icon} title={item.title } />
+                    ))}
                 </div>
             </div>
         </div>

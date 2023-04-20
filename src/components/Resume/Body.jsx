@@ -1,4 +1,5 @@
 import React from 'react';
+import { personalExp, companyExp, softSkill, stats } from "../../dummy";
 
 
 const Body = ({ darkMode }) => {
@@ -30,11 +31,10 @@ const Body = ({ darkMode }) => {
             
             <div className="flex flex-col mb-5">
                 <h3 className={`${darkMode ? ' text-gray-200' : 'text-slate-800' } gt text-3xl mb-4 font-medium`}>Personal Projects</h3>
-
                 <ul className={`list-disc md:ml-0 ml-1 ${darkMode ? ' text-gray-200' : 'text-slate-600' }`}>
-                    <li className='gt  text-xl'>Improved in problem definition, planning and providing solutions</li>
-                    <li className=' gt  text-xl'>Improved in time management and system maintenance</li>
-                    <li className='gt  text-xl'>Developed several successful projects, personal and collaborative.</li>
+                    {personalExp.map((text, index) => (
+                        <li className='gt  text-xl'>{text}</li>
+                    ))}
                 </ul>
             </div>
 
@@ -43,12 +43,9 @@ const Body = ({ darkMode }) => {
                 <h6 className={`${darkMode ? ' text-gray-200' : 'text-slate-700' } gt text-xl mb-2 font-medium`}>Femtech, August 2022 - December 2022</h6>
 
                 <ul className={`${darkMode ? ' text-gray-200' : 'text-slate-600' } list-disc`}>
-                    <li className='gt text-xl'>Demonstrated ability to manage multiple tasks while remaining adaptable and flexible</li>
-                    <li className='gt text-xl'>Experienced with social media and communication platforms</li>
-                    <li className='gt text-xl'>Defined problems, collected data, established facts and validated conclusions.</li>
-                    <li className='gt text-xl'>Detected and reported larger technical issues.</li>
-                    <li className='gt text-xl'>Skilled in using various web technologies such as React, 
-                        Redux, Mongo-DB, express, Node-JS, Bootstrap etc.</li>
+                    {companyExp.map((text, index) => (
+                        <li className='gt text-xl'>{text}</li>
+                    ))}
                 </ul>
             </div>
 
@@ -70,32 +67,24 @@ const Body = ({ darkMode }) => {
             <div className="flex flex-col mb-5 md:ml-0 ml-1">
                 <h3 className={`${darkMode ? ' text-gray-200' : 'text-slate-800' } gt text-3xl mb-2 font-medium`}>Soft Skills</h3>
                 <ul className={`${darkMode ? ' text-gray-200' : 'text-slate-600' } list-disc`}>
-                    <li className='gt text-xl'>Good communication skills</li>
-                    <li className='gt text-xl'>Quick learning and Adapting skills</li>
-                    <li className='gt text-xl'>Problem solving skills</li>
-                    <li className='gt text-xl'>Good collaborative skills</li>
+                    {softSkill.map((text, index) => (
+                        <li className='gt text-xl'>{text}</li>
+                    ))}
                 </ul>
             </div>
         </div>
 
         <div className='flex md:flex-row flex-col glassmorphism shadow-2xl mt-5 justify-center items-center py-[7%]'>
-                <div className="flex justify-center items-center md:my-0 my-[10%]
-                    flex-col border-2 md:w-[180px] w-[200px] md:h-[180px] h-[200px] p-9 rounded-full border-indigo-600">
-                        <h1 className={`${darkMode ? ' text-gray-200' : 'text-slate-900' } text-6xl futura font-bold mb-2`}>2Years</h1>
-                        <p className='text-xl futura text-indigo-400'>Experience</p>
-                </div>
-                <div className="h-0.5 w-[170px] -translate-x-4  bg-indigo-600 ml-6"></div>
-                <div className="flex justify-center items-center flex-col border-2 
-                   md:w-[180px] w-[200px] md:h-[180px] h-[200px] p-9 rounded-full border-indigo-600 md:my-0 my-[10%]">
-                        <h1 className={`${darkMode ? ' text-gray-200' : 'text-slate-900' } text-6xl futura font-bold mb-2`}>15+</h1>
-                        <p className='text-xl futura text-indigo-400'>Projects</p>
-                </div>
-                <div className="h-0.5 w-[170px] -translate-x-4  bg-indigo-600 ml-6"></div>
-                <div className="flex justify-center items-center flex-col border-2 md:w-[180px] 
-                    w-[200px] md:h-[180px] h-[200px] p-9 rounded-full border-indigo-600 md:my-0 my-[10%]">
-                        <h1 className={`${darkMode ? ' text-gray-200' : 'text-slate-900' } text-6xl futura font-bold mb-2`}>Good</h1>
-                        <p className='text-xl futura text-indigo-400'>Reviews</p>
-                </div>
+            {stats.map((item, index) => (
+                <>
+                    {index === 0 || 2 && <div className="h-0.5 w-[170px] -translate-x-4  bg-indigo-600 ml-6"></div>}
+                    <div className="flex justify-center items-center flex-col border-2 
+                        md:w-[180px] w-[200px] md:h-[180px] h-[200px] p-9 rounded-full border-indigo-600 md:my-0 my-[10%]">
+                        <h1 className={`${darkMode ? ' text-gray-200' : 'text-slate-900' } text-6xl futura font-bold mb-2`}>{item.title}</h1>
+                        <p className='text-xl futura text-indigo-400'>{item.subtitle}</p>
+                    </div>
+                </>
+            ))}
         </div>
     </div>
     </>

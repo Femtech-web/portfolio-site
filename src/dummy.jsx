@@ -1,9 +1,26 @@
-import {BsDatabaseFillX} from 'react-icons/bs';
+import {BsDatabaseFillX, BsGithub, BsFacebook, BsSquare,
+BsInstagram, BsWhatsapp, BsTwitter} from 'react-icons/bs';
 import {DiResponsive} from 'react-icons/di';
 import {RiStackLine, RiComputerLine} from 'react-icons/ri'
 import {AiOutlineDatabase,
 AiOutlineAppstore
 } from 'react-icons/ai';
+import { DiHtml5, DiCss3,
+DiJavascript, DiBootstrap,
+DiNodejs, DiDatabase,
+DiMongodb, DiGit,
+DiGithubBadge, DiMailchimp,
+DiNpm, DiJqueryLogo,
+DiReact, DiFirebase} from 'react-icons/di';
+import { TbBrandNextjs } from 'react-icons/tb';
+import {SiMui, SiSolidity,
+SiTailwindcss, SiPassport,
+SiExpress, SiAuth0,
+SiRedux,
+SiWeb3Dotjs} from 'react-icons/si';
+import { MdHighQuality } from 'react-icons/md';
+import { GiDart } from 'react-icons/gi';
+
 
 export const projectData = [
     {
@@ -114,5 +131,201 @@ export const servicesData = [
         title:'Responsive Web Service',
         subtitle:'I not only just render Web Services but deliver Responsive Web Service which can be fully suitable and on both Desktop and Mobile Devices, giving you a great User Experience',
         icon:<DiResponsive fontSize={35} className='text-white'/>
+    }
+]
+
+export const skillsData = [
+{
+icon: <DiHtml5 fontSize={80} className='text-slate-500 mb-4 '/>,
+title:'HTML', 
+},
+{
+icon: <DiCss3 fontSize={80} className='text-slate-500 mb-4'/>,
+title: 'CSS',
+},   
+{
+icon: <DiJavascript fontSize={80} className='text-slate-500 mb-4'/>,  
+title: 'Javascript',
+},
+{
+icon: <DiReact fontSize={80} className='text-slate-500 mb-4'/>,
+title: 'React',
+},  
+
+{
+icon: <TbBrandNextjs fontSize={80} className='text-slate-500 mb-4'/>, 
+title: 'Nextjs',
+},
+{
+icon: <DiBootstrap fontSize={80} className='text-slate-500 mb-4'/>, 
+title: 'Bootstrap',
+},
+{
+icon: <SiTailwindcss fontSize={80} className='text-slate-500 mb-4'/>, 
+title: 'TailwindCss',
+},
+{
+icon: <DiJqueryLogo fontSize={80} className='text-slate-500 mb-4'/>, 
+title: 'JQuery',
+},
+{
+icon: <SiMui fontSize={80} className='text-slate-500 mb-4'/>, 
+title:'MaterialUi', 
+},
+{
+icon: <SiAuth0 fontSize={80} className='text-slate-500 mb-4'/>, 
+title: 'Auth0',
+},
+{
+icon: <SiSolidity fontSize={80} className='text-slate-500 mb-4'/>, 
+title: 'Solidity',
+}
+]
+
+
+export const skillsData2 = [
+{
+ icon: <DiNodejs fontSize={80} className='text-slate-500 mb-4'/>,
+ title: 'NodeJs',    
+},
+    
+{
+ icon: <DiMongodb fontSize={80} className='text-slate-500 mb-4'/>,
+ title: 'MongoDb',    
+},
+    
+{
+ icon: <DiNpm fontSize={80} className='text-slate-500 mb-4'/>,
+ title: 'Npm',    
+},
+    
+{
+ icon: <SiExpress fontSize={80} className='text-slate-500 mb-4'/>,
+ title: 'ExpressJs',    
+},
+    
+{
+ icon: <SiRedux fontSize={80} className='text-slate-500 mb-4'/>,
+ title: 'ReduxToolkit',    
+},
+    
+{
+ icon: <DiDatabase fontSize={80} className='text-slate-500 mb-4'/>,
+ title: 'Mongoose',    
+},
+    
+{
+ icon: <DiGithubBadge fontSize={80} className='text-slate-500 mb-4'/>,
+ title: 'Github',    
+},
+    
+{
+ icon: <DiGit fontSize={80} className='text-slate-500 mb-4'/>,
+ title: 'Git',    
+},
+    
+{
+ icon: <DiFirebase fontSize={80} className='text-slate-500 mb-4'/>,
+ title: 'Firebase',    
+},
+    
+{
+ icon: <SiPassport fontSize={80} className='text-slate-500 mb-4'/>,
+ title: 'PassportJs',    
+},
+    
+{
+ icon: <SiWeb3Dotjs fontSize={80} className='text-slate-500 mb-4'/>,
+ title: 'Web3.Js',    
+},
+    
+{
+ icon: <DiMailchimp fontSize={80} className='text-slate-500 mb-4'/>,
+ title: 'Mailchimp',    
+}
+    
+]
+
+export const socialData = [
+{
+    url: "https://github.com/Femtech-web",
+    icon: <BsGithub fontSize={27} className='text-gray-200 cursor-pointer'/>, 
+},
+{
+    url: "https://web.facebook.com/profile.php?id=100007274899219",
+    icon: <BsFacebook fontSize={27} className='text-gray-200 cursor-pointer'/>,
+},
+
+{
+    url: "https://www.instagram.com/bossfemzy",
+    icon: <BsInstagram fontSize={27} className='text-gray-200 cursor-pointer'/>, 
+},
+{
+    url: "https://twitter.com/Fem_webDev",
+    icon: <BsTwitter fontSize={27} className='text-gray-200 cursor-pointer'/>, 
+},
+
+{
+    url: "https://wa.me/08149118596",
+    icon: <BsWhatsapp fontSize={27} className='text-gray-200 cursor-pointer'/>, 
+},
+
+]
+
+export const aboutMe = {
+    text: "My Name is Akolade Oluwafemi Adeyemi. I am a Fullstack Developer.My Journey into Web Development started in January 2022 and since then I have never been the same.I have been through many improvement phases and since this is a Passion, I have been able to come out out of them all. I have undertaken many projects and have been able to successfully complete them all. I am a Determined professional with planning and implementing high quality websites and web apps.Skilled in frontend and backend web technologies. Proven abilities to quickly understand requirements, create innovative solutions and complete projects within provided deadlines."
+};
+
+export const values = [
+{
+    icon: <MdHighQuality fontSize={40} className='cursor-pointer  '/>,
+    title: 'Quality',
+    subtitle: 'I am are Dedicated to giving you quality High service worthy of Accolade',
+},
+{
+    icon: <GiDart fontSize={40} className='cursor-pointer  '/>,
+    title: 'Accuracy',
+    subtitle: 'I take Priority in delivering services at the appropiate and given time for continous service',
+},
+{
+    icon: <BsSquare fontSize={40} className='cursor-pointer  '/>,
+    title: 'Transparency',
+    subtitle: 'You can trust me when it comes to being sincere and transparent in giving out service',
+}
+];
+
+export const personalExp = [
+'Improved in problem definition, planning and providing solutions',
+'Improved in time management and system maintenance',
+'Developed several successful projects, personal and collaborative.'
+];
+
+export const companyExp = [
+"Demonstrated ability to manage multiple tasks while remaining adaptable and flexible",
+"Experienced with social media and communication platforms",
+"Defined problems, collected data, established facts and validated conclusions",
+"Detected and reported larger technical issues",
+"Skilled in using various web technologies such as React,Redux, Mongo-DB, express, Node-JS, Bootstrap etc."
+];
+
+export const softSkill = [
+'Good communication skills',
+'Quick learning and Adapting skills',
+'Problem solving skills',
+'Good collaborative skills'
+]
+
+export const stats = [
+    {
+        title: '2years',
+        subtitle: 'Experience'
+    },
+    {
+        title: '15+',
+        subtitle: 'Projects'
+    },
+    {
+        title: 'Good',
+        subtitle: 'Reviews'
     }
 ]

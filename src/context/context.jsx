@@ -4,7 +4,7 @@ import React, { useState, createContext, useEffect } from "react";
 export const ToggleContext = createContext();
 
 export const ToggleProvider = ({children}) => {
-    const [darkMode, setDarkMode] = useState(localStorage.getItem('backMode') || false);
+    const [darkMode, setDarkMode] = useState(false);
     const [screenSize, setScreenSize] = useState(null);
     const [mobile, setMobile] = useState(false);
 
@@ -22,15 +22,19 @@ export const ToggleProvider = ({children}) => {
         } else{
           setMobile(false);
         }
-      }, [screenSize])
+      }, [screenSize]);
+
+      useEffect(() => {
+        setDarkMode(JSON.parse(localStorage.getItem('backMode')))
+      }, [])
 
     const handleClick = () => {
-            setDarkMode((prev) => !prev)
+            setDarkMode((prev) => !prev);
 
-            localStorage.setItem('backMode', !darkMode);
+          localStorage.setItem('backMode', !darkMode);
     }
 
-    return (<ToggleContext.Provider value={{handleClick, darkMode, mobile, }} >
+    return (<ToggleContext.Provider value={{handleClick, darkMode, mobile }} >
      {children}
     </ToggleContext.Provider>)
 }

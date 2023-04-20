@@ -3,12 +3,12 @@ import { servicesData } from '../../dummy';
 
 const Box = ({ icon, title, subtitle}) => {
     return (
-      <div className='flex flex-col bg-[#3D3E42] hover:shadow-inner hover:shadow-indigo-500 transition-all
+      <div className='flex flex-col bg-[#3D3E42] shadow-inner shadow-indigo-500 transition-all
         md:p-5  m-5 p-7 md:w-[90%] w-[97%] justify-center group
         rounded-xl items-center cursor-pointer'>
       <div className="w-[100px]  h-[100px] rounded-full transition-all
         bg-slate-500 flex justify-center mb-6 items-center 
-        group-hover:shadow-inner group-hover:shadow-gray-200">{icon}</div>
+        shadow-inner shadow-gray-200">{icon}</div>
       <h3 className="text-gray-200 mb-4 text-center font-semibold text-[1.4rem] gt">{title}</h3>
       <p className="text-gray-200 gt text-center text-base whitespace-normal">{subtitle}</p>
       </div>

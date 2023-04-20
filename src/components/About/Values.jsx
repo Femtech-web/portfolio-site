@@ -1,7 +1,5 @@
 import React from 'react';
-import { BsSquare } from 'react-icons/bs';
-import { MdHighQuality } from 'react-icons/md';
-import { GiDart } from 'react-icons/gi';
+import { values } from '../../dummy';
 
 const Box = ({ icon, title, subtitle, darkMode}) => {
     return (
@@ -26,12 +24,10 @@ const Values = ({ darkMode }) => {
             <h1 className={`${darkMode ? ' text-gray-200' : 'text-slate-800' } futura text-7xl`}>Values</h1>
         </div>
         <div className='flex md:flex-row flex-col justify-center items-center'>
-            <Box darkMode={darkMode} icon={ <MdHighQuality fontSize={40} className='cursor-pointer  '/>}
-            title='Quality' subtitle='I am are Dedicated to giving you quality High service worthy of Accolade' />
-            <Box darkMode={darkMode} icon={ <GiDart fontSize={40} className='cursor-pointer  '/>}
-            title='Accuracy' subtitle='I take Priority in delivering services at the appropiate and given time for continous service' />
-            <Box darkMode={darkMode} icon={ <BsSquare fontSize={40} className='cursor-pointer  '/>}
-            title='Transparency' subtitle='You can trust me when it comes to being sincere and transparent in giving out service' />
+            {values.map((item, index) => (
+                <Box darkMode={darkMode} icon={item.icon} key={index}
+                title={item.title} subtitle={item.subtitle} />
+            ))}
         </div>
     </div>
   )

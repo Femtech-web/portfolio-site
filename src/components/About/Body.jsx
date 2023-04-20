@@ -3,10 +3,10 @@ import { ToggleContext } from '../../context/context';
 import { Link } from 'react-router-dom';
 import { MdOutlineDarkMode } from 'react-icons/md';
 import { AiFillHome } from 'react-icons/ai';
-import { BsGithub, BsFacebook,
-BsInstagram, BsArrowLeft,
-BsWhatsapp, BsSun,
-BsTwitter } from 'react-icons/bs'
+import { socialData } from '../../dummy';
+import { BsArrowLeft,BsSun } from 'react-icons/bs'
+import { aboutMe } from '../../dummy';
+    
 
 
 const Overlay = ({ icon }) => {
@@ -39,30 +39,15 @@ const body = () => {
                     <div className='h-1 w-[100px] bg-indigo-600 ml-2'></div>
                 </div>
                 <div className='mt-[10%] md:mb-0 mb-[10%]'>
-                    <p className='gt text-gray-200 text-xl md:text-lg '>My Name is Akolade Oluwafemi Adeyemi. I am a Fullstack Developer.
-                    My Journey into Web Development started in January 2022 and since then I have never been the same.
-                    I have been through many improvement phases and since this is a Passion, I have been able to come out
-                    out of them all. I have undertaken many projects and have been able to successfully complete them all.
-                    I am a Determined professional with planning and implementing high quality websites and web apps. 
-                    Skilled in frontend and backend web technologies. Proven abilities to quickly understand requirements, 
-                    create innovative solutions and complete projects within provided deadlines.</p>
+                    <p className='gt text-gray-200 text-xl md:text-lg '>{aboutMe.text}</p>
                 </div>
-                <div  className='flex w-full justify-center md:justify-start absolute bottom-0 md:bottom-6 z-10'>
-                    <a href="https://github.com/Femtech-web" target="_blank" rel="noopener noreferrer">
-                        <Overlay icon={ <BsGithub fontSize={27} className='text-gray-200 cursor-pointer'/> }/>
-                    </a>
-                    <a href="https://web.facebook.com/profile.php?id=100007274899219" target="_blank" rel="noopener noreferrer">
-                        <Overlay icon={ <BsFacebook fontSize={27} className='text-gray-200 cursor-pointer'/> }/>
-                    </a>
-                    <a href="https://www.instagram.com/bossfemzy" target="_blank" rel="noopener noreferrer">
-                        <Overlay icon={ <BsInstagram fontSize={27} className='text-gray-200 cursor-pointer'/> }/>
-                    </a>
-                    <a href="https://twitter.com/Fem_webDev" target="_blank" rel="noopener noreferrer">
-                        <Overlay icon={ <BsTwitter fontSize={27} className='text-gray-200 cursor-pointer'/> }/>
-                    </a>
-                    <a href="https://wa.me/08149118596" target="_blank" rel="noopener noreferrer">
-                        <Overlay icon={ <BsWhatsapp fontSize={27} className='text-gray-200 cursor-pointer'/> }/>
-                    </a>
+                <div  className='flex w-full justify-center
+                    md:justify-start absolute bottom-0 md:bottom-6 z-10'>
+                        {socialData.map((item, index) => (
+                            <a href={item.url} target="_blank" rel="noopener noreferrer">
+                                <Overlay icon={item.icon} key={index}/>
+                            </a>
+                        ))}
                 </div>
             </div>
             <div className='flex-1'>

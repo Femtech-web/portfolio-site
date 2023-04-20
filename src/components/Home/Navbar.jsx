@@ -42,9 +42,9 @@ const Navbar = ({ handleClick, darkMode, project }) => {
         </div>
         <div className='w-[30%] md:flex hidden justify-start items-center'>
             {darkMode ? <BsSun fontSize={30} className='mx-[5rem]
-            cursor-pointer hover:scale-75 transition-all' onClick={() => handleClick()}/> 
+            cursor-pointer hover:scale-75 transition-all' onClick={handleClick}/> 
             : <MdOutlineDarkMode fontSize={30} className='mx-[5rem]
-            cursor-pointer hover:scale-75 transition-all' onClick={() => handleClick()}/>}
+            cursor-pointer hover:scale-75 transition-all' onClick={handleClick}/>}
             <a href="https://wa.me/08149118596" target="_blank" rel="noopener noreferrer">
               <button className=' justify-center items-center transition-all flex
               bg-blue-400 rounded-md px-4 py-2 text-white gt hover:bg-blue-500 tracking-widest cursor-pointer'>Hire me
