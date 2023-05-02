@@ -21,7 +21,7 @@ const Navbar = ({ handleClick, darkMode, project }) => {
 
   return (
     <nav className={`flex align-center md:justify-evenly justify-between py-7  
-        ${darkMode || project ? 'bg-[#0F1724] text-gray-200' : 'bg-[#fff]' } `}>
+        ${darkMode || project ? 'bg-[#0F1724] text-gray-200 md:border-none border-b-[1px] border-gray-200' : 'bg-[#fff]' } `}>
         <div className='flex items-center justify-between md:justify-evenly w-[70%]'>
             <div className=" 
                 flex-initial justify-center items-center ml-4 md:ml-0">

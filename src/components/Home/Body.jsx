@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { homeSocialIcons } from '../../dummy';
 import { ToggleContext } from '../../context/context';
 import 'animate.css';
 import { BsCursorFill, 
@@ -16,16 +17,16 @@ const Body = ({ darkMode}) => {
         <div className={`flex  md:flex-row flex-col justify-evenly animate__animated animate__fadeIn
             items-start md:items-center pl-4 py-[10%] md:pl-[9%]
             text-left ${darkMode ? 'bg-[#0F1724] text-gray-200' : 'bg-[#fff]' }`}>
-            <div className='flex flex-col md:w-[50%] w-full md:pt:0 '>
-                <h1 className='futura font-black md:text-5xl text-6xl 
+            <div className='flex flex-col md:w-[50%] w-full md:pt:0'>
+                <h1 className='futura font-black text-5xl 
                     bg-gradient-to-r from-[#9060DA] to-[#28A2CF] bg-clip-text text-transparent mb-3'>Hello,</h1>
-                <p className='futura font-black md:text-5xl text-6xl
+                <p className='futura font-black text-5xl 
                     bg-gradient-to-r from-[#9060DA] to-[#28A2CF] bg-clip-text text-transparent mb-3'>I'm Adeyemi Oluwafemi</p>
                 <p className={`${darkMode ? 'text-gray-200' : 'text-gray-800'} futura font-black 
-                    text-5xl tracking-wider mb-4`}>Fullstack Developer
+                    md:text-4xl text-3xl  tracking-wider mb-4`}>Fullstack Developer
                 </p>
                 <p className={`${darkMode ? 'text-gray-200' : 'text-gray-600 mr-2'} 
-                    gt md:text-xl text-[1.4rem]`}>Skillful Frontend and backend Web Developer. specialize in competent 
+                    gt md:text-xl text-base`}>Skillful Frontend and backend Web Developer. specialize in competent 
                     web development skills with focus on collaboration communication and passion.
                 </p>
                 <div className='flex mt-4 pr-4'>
@@ -62,19 +63,13 @@ const Body = ({ darkMode}) => {
             </div>}
 
             <div className="md:flex hidden  flex-col justify-evenly ">
-                <a href="https://web.facebook.com/profile.php?id=100007274899219" target="_blank" rel="noopener noreferrer">
-                    <BsFacebook className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
-                </a>
-                <a href="https://www.instagram.com/bossfemzy" target="_blank" rel="noopener noreferrer"> 
-                    <BsInstagram className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
-                </a>
-                <a href="https://twitter.com/Fem_webDev" target="_blank" rel="noopener noreferrer">
-                    <BsTwitter className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
-                </a>
-                <a href="https://wa.me/08149118596" target="_blank" rel="noopener noreferrer">
-                    <BsWhatsapp className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
-                </a>
-            </div>
+                {homeSocialIcons.map((item) => (
+
+                    <a href={item.url} target="_blank" rel="noopener noreferrer">
+                        {item.icon}
+                    </a>
+                ))}
+          </div>
         </div>
     </div>
   )

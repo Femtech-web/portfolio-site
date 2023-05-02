@@ -272,6 +272,25 @@ export const socialData = [
 
 ]
 
+export const homeSocialIcons = [
+    {
+       url: "https://web.facebook.com/profile.php?id=100007274899219",
+       icon: <BsFacebook className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
+    },
+    {
+       url: "https://www.instagram.com/bossfemzy",
+       icon: <BsInstagram className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
+    },
+    {
+       url: "https://twitter.com/Fem_webDev",
+       icon: <BsTwitter className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
+    },
+    {
+       url: "https://wa.me/08149118596",
+       icon: <BsWhatsapp className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
+    }
+]
+
 export const aboutMe = {
     text: "My Name is Akolade Oluwafemi Adeyemi. I am a Fullstack Developer.My Journey into Web Development started in January 2022 and since then I have never been the same.I have been through many improvement phases and since this is a Passion, I have been able to come out out of them all. I have undertaken many projects and have been able to successfully complete them all. I am a Determined professional with planning and implementing high quality websites and web apps.Skilled in frontend and backend web technologies. Proven abilities to quickly understand requirements, create innovative solutions and complete projects within provided deadlines."
 };

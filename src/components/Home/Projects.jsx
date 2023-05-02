@@ -11,7 +11,7 @@ export const IndProject = ({ title, desc, techTitle, technologies, links, imageU
             ${glass && 'white-glassmorphism mb-[5%] py-[8%]'}`}>
             <div className='flex flex-col justify-center items-start md:w-[50%] w-full'>
                 <h1 className='text-gray-200 mb-4 font-semibold  text-[1.6rem] gt '>{title}</h1>
-                <p className="text-gray-200 gt text-lg">{desc}</p>
+                <p className="text-gray-200 gt md:text-lg text-base">{desc}</p>
                 <h3 className="text-gray-200 gt text-xl font-semibold my-2">{techTitle}</h3>
                 <ul className='inline-block list-none text-gray-200 gt'>
                     {technologies.map((name) => (

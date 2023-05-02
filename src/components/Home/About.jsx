@@ -7,7 +7,7 @@ const About = ({ darkMode }) => {
             <h1 className={`${darkMode ? ' text-gray-200' : 'text-slate-800' }futura 
             font-bold tracking-widest md:max-w-300 max-w-400 text-4xl inline-block 
             pb-4 mb-9 border-b-2 border-indigo-600`}>About me</h1>
-            <p className={`${darkMode ? ' text-gray-200' : 'text-slate-700 '} gt md:text-xl text-2xl`}>Determined professional with planning and implementing high quality websites and web apps. 
+            <p className={`${darkMode ? ' text-gray-200' : 'text-slate-700 '} gt md:text-xl text-base`}>Determined professional with planning and implementing high quality websites and web apps. 
             Skilled in frontend and backend web technologies. Proven abilities
             to quickly understand requirements, create innovative solutions and complete projects
             within provided deadlines.
