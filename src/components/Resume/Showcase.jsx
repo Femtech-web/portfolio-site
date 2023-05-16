@@ -16,7 +16,7 @@ const Showcase = ({ handleClick, darkMode }) => {
       viewport={{ once: true, amount: 0.25 }}
       className='relative flex flex-col overflow-hidden'>
       <motion.div
-        variants={slideIn('left', 'spring', 0.5, 0.75)} 
+        variants={slideIn("left", "spring", 0.5, 0.75)} 
         className="flex justify-between w-[98%] items-center absolute top-[3%] left-5 z-30">
         <div className="flex justify-start items-center mt-[1%]">
           <Link to={'/'}><AiFillHome fontSize={28} className='text-gray-200  

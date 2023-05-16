@@ -1,13 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { SectionWrapper } from '../../hoc';
-import { slideIn, fadeIn } from '../../utils/motion';
+import { slideIn, fadeIn, staggerContainer } from '../../utils/motion';
 import { footerSocials } from '../../dummy';
 import Logo from './Logo';
 
 const Footer = () => {
   return (
-    <div className='flex items-center py-10 px-[5%] bg-darkMain w-full'>
+    <motion.div 
+        variants={staggerContainer(0.3, 0.5)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+      className='flex items-center py-10 px-[5%] bg-darkMain w-full'>
       <div className='justify-between  flex items-center w-full '>
         <motion.span
           variants={slideIn('right', 'spring',  0.4, 0.7)}
@@ -32,8 +36,8 @@ const Footer = () => {
           ))}
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
-export default SectionWrapper(Footer)
+export default Footer
