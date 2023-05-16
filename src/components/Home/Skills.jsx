@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { textVariant, staggerContainer } from '../../utils/motion';
 import { skillsData, skillsData2 } from '../../dummy';
 
 
@@ -7,20 +9,30 @@ const Box = ({ icon, title}) => {
         <div className="flex flex-col justify-between 
             items-center shadow-md bg-gray-200 mx-4 px-6 py-4 rounded-xl">
             { icon }
-            <p className="text-3xl acumin text-slate-400 tracking-widest">{ title }</p>
+            <p className="text-3xl acumin text-slate-400 tracking-widest"
+            >
+                { title }
+            </p>
         </div>
     )
 }
 const Skills = ({ darkMode }) => {
   return (
-    <div className={`${darkMode ? 'bg-[#0F1724] ' : 'bg-[#fff]' } py-[5%] `}>
+    <motion.div
+        variants={staggerContainer(0.3, 0.5)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }} 
+        className={`${darkMode ? 'bg-darkMain' : 'bg-[#fff]' } py-[5%] `}>
         <div className="flex flex-col justify-center items-start w-full overflow-hidden">
-            <div className="flex flex-col w-full justify-center items-center mb-[4rem]">
+            <motion.div 
+                variants={textVariant(0.2)}
+                className="flex flex-col w-full justify-center items-center mb-[4rem]">
                 <h1 className={`${darkMode ? ' text-gray-200' : 'text-slate-800' } futura font-bold 
                 tracking-widest text-4xl inline-block  
                 pb-2 `}>Tools I Use</h1>
                 <div className="h-0.5 w-[120px] bg-indigo-600 mt-2"></div>
-            </div>
+            </motion.div>
             <div className="flex flex-col ">
                 <div className="flex swipe mb-10">
                     {skillsData.map((item, index) => (
@@ -34,7 +46,7 @@ const Skills = ({ darkMode }) => {
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

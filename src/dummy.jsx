@@ -1,5 +1,5 @@
 import {BsDatabaseFillX, BsGithub, BsFacebook, BsSquare,
-BsInstagram, BsWhatsapp, BsTwitter} from 'react-icons/bs';
+BsInstagram, BsWhatsapp, BsTwitter, BsLinkedin} from 'react-icons/bs';
 import {DiResponsive} from 'react-icons/di';
 import {RiStackLine, RiComputerLine} from 'react-icons/ri'
 import {AiOutlineDatabase,
@@ -275,20 +275,35 @@ export const socialData = [
 export const homeSocialIcons = [
     {
        url: "https://web.facebook.com/profile.php?id=100007274899219",
-       icon: <BsFacebook className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
+       icon: <BsFacebook className='hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
     },
     {
        url: "https://www.instagram.com/bossfemzy",
-       icon: <BsInstagram className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
+       icon: <BsInstagram className='hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
     },
     {
        url: "https://twitter.com/Fem_webDev",
-       icon: <BsTwitter className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
+       icon: <BsTwitter className='hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
     },
     {
        url: "https://wa.me/08149118596",
-       icon: <BsWhatsapp className='mb-6 hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
+       icon: <BsWhatsapp className='hover:scale-75 transition-all cursor-pointer' fontSize={24}/>
     }
+]
+
+export const footerSocials = [
+    {
+        url: "https://github.com/Femtech-web",
+        icon: <BsGithub fontSize={25} className='text-gray-200 mr-4 hover:scale-75 transition-all cursor-pointer'/> 
+     },
+     {
+        url: "https://www.linkedin.com/in/adeyemi-femi-176302244",
+        icon: <BsLinkedin fontSize={25} className='text-gray-200 mr-4 hover:scale-75 transition-all cursor-pointer'/>
+     },
+     {
+        url: "https://www.instagram.com/bossfemzy",
+       icon: <BsInstagram fontSize={25} className='text-gray-200 mr-4 hover:scale-75 transition-all cursor-pointer'/>
+     }
 ]
 
 export const aboutMe = {
@@ -313,18 +328,31 @@ export const values = [
 }
 ];
 
-export const personalExp = [
-'Improved in problem definition, planning and providing solutions',
-'Improved in time management and system maintenance',
-'Developed several successful projects, personal and collaborative.'
-];
+export const Experiences = [
+    {
+        title: 'Personal Projects',
+        company: 'personal',
+        date: 'January 1st - December 30th',
+        points: [
+            'Improved in problem definition, planning and providing solutions',
+            'Improved in time management and system maintenance',
+            'Developed several successful projects, personal and collaborative.'
+        ]
+    },
+    {
+        title: 'Fullstack MERN Developer',
+        date: 'February 1st - March 30th',
+        company: 'Avm Dev',
+        points: [
+            "Demonstrated ability to manage multiple tasks while remaining adaptable and flexible",
+            "Experienced with social media and communication platforms",
+            "Defined problems, collected data, established facts and validated conclusions",
+            "Detected and reported larger technical issues",
+            "Skilled in using various web technologies such as React,Redux, Mongo-DB, express, Node-JS, Bootstrap etc."
+        ]
+    }
 
-export const companyExp = [
-"Demonstrated ability to manage multiple tasks while remaining adaptable and flexible",
-"Experienced with social media and communication platforms",
-"Defined problems, collected data, established facts and validated conclusions",
-"Detected and reported larger technical issues",
-"Skilled in using various web technologies such as React,Redux, Mongo-DB, express, Node-JS, Bootstrap etc."
+
 ];
 
 export const softSkill = [
