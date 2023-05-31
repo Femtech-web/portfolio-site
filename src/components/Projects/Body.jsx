@@ -6,22 +6,29 @@ import Footer from '../Home/Footer';
 import  IndProject  from '../Home/IndProject';
 import { projectData } from '../../dummy';
 
+
+const style = {
+    container: 'flex flex-col pb-[5%] md:px-[7%] px-[5%] pt-12 bg-darkMain',
+    anime: 'animate__animated animate__fadeInDown',
+};
+
+
 const Body = () => {
+    const features = ['Great User Interface', 'Amazing User Experience', 'Perfect Backend Logics'];
+    
   return (
     <>
-    <div className='flex flex-col pb-[5%] md:px-[7%] px-[5%] pt-12 bg-darkMain'>
+    <div className={style.container}>
         <Navbar project={true}/>
-        <div className="flex md:flex-row flex-col justify-center items-center 
-            animate__animated animate__fadeInDown">
-            <div className='flex flex-col max-w-[300px] my-[5rem] items-center justify-center flex-1'>
-                <h1 className="futura font-bold tracking-widest text-7xl inline-block text-gray-200
-                pb-2">Recent Projects</h1>
-                <div className="h-0.5 w-[170px] -translate-x-4  bg-indigo-600 mt-2"></div>
+        <div className={`${styles.flexMobile2} ${styles.flexCenter} ${style.anime} `}>
+            <div className={`${styles.headingCont} my-[5rem]`}>
+                <h1 className={`${styles.headingH1} text-7xl`}>Recent Projects</h1>
+                <div className={styles.line}></div>
             </div>
             <div className='flex flex-1 ml-[10%]'>
                 <TypewriterComponent 
                     options={{
-                        strings: ['Great User Interface', 'Amazing User Experience', 'Perfect Backend Logics'],
+                        strings: features,
                         autoStart: true,
                         loop: true,
                         wrapperClassName: styles.writer

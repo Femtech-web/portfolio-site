@@ -8,6 +8,13 @@ import { projectData } from '../../dummy';
 import IndProject from './IndProject';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { styles } from '../../utils/styles';
+
+
+const style = {
+    container: 'px-[3%] py-[2%] bg-darkMain relative',
+    swipe: 'absolute md:top-8 md:right-8 top-4 right-4 text-white flex justify-center'
+};
 
 
 const Projects = () => {
@@ -22,13 +29,12 @@ const Projects = () => {
     };
     
   return (
-    <div className='flex flex-col px-[3%] py-[2%] bg-darkMain relative'>
+    <div className={`${styles.flexY} ${style.container}`}>
         <motion.div
             variants={textVariant(0.2)} 
-            className='flex flex-col max-w-[300px] mb-[5rem] items-center justify-center'>
-            <h1 className="futura font-bold tracking-widest text-4xl inline-block text-gray-200
-            pb-2 ">Recent Projects</h1>
-            <div className="h-0.5 w-[170px] -translate-x-4  bg-indigo-600 mt-2"></div>
+            className={styles.headingCont}>
+            <h1 className={styles.headingH1}>Recent Projects</h1>
+            <div className={styles.line}></div>
         </motion.div>
 
         <div>
@@ -42,8 +48,7 @@ const Projects = () => {
                  ))}
             </Slider>
         </div> 
-        <div className='absolute md:top-8 md:right-8 top-4 right-4 
-            text-white flex justify-center'>
+        <div className={style.swipe}>
             <MdSwipe fontSize={20} className='mr-2'/>
             <p className='text-sm gt'>swipe</p>
         </div>

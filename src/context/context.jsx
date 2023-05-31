@@ -9,24 +9,24 @@ export const ToggleProvider = ({children}) => {
     const [mobile, setMobile] = useState(false);
 
     useEffect(() => {
-        const handleResize = () => setScreenSize(window.innerWidth);
-        window.addEventListener('resize', handleResize);
-        handleResize();
-  
-        return () => window.removeEventListener('resize', handleResize);
-      }, []);
-  
-      useEffect(() => {
-        if(screenSize <= 580){
-          setMobile(true);
-        } else{
-          setMobile(false);
-        }
-      }, [screenSize]);
+      const handleResize = () => setScreenSize(window.innerWidth);
+      window.addEventListener('resize', handleResize);
+      handleResize();
 
-      useEffect(() => {
-        setDarkMode(JSON.parse(localStorage.getItem('backMode')))
-      }, [])
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+  
+    useEffect(() => {
+      if(screenSize <= 580){
+        setMobile(true);
+      } else{
+        setMobile(false);
+      }
+    }, [screenSize]);
+
+    useEffect(() => {
+      setDarkMode(JSON.parse(localStorage.getItem('backMode')))
+    }, [])
 
     const handleClick = () => {
             setDarkMode((prev) => !prev);
