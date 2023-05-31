@@ -3,7 +3,7 @@ import TypewriterComponent from 'typewriter-effect';
 import { styles } from '../../utils/styles';
 import Navbar from '../Home/Navbar';
 import Footer from '../Home/Footer';
-import { IndProject } from '../Home/Projects';
+import  IndProject  from '../Home/IndProject';
 import { projectData } from '../../dummy';
 
 const Body = () => {

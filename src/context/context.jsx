@@ -4,7 +4,7 @@ import React, { useState, createContext, useEffect } from "react";
 export const ToggleContext = createContext();
 
 export const ToggleProvider = ({children}) => {
-    const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(false);
     const [screenSize, setScreenSize] = useState(null);
     const [mobile, setMobile] = useState(false);
 
