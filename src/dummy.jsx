@@ -43,6 +43,44 @@ export const projectData = [
         imageUrl: "/images/shopem.png"
     },
     {
+        title: 'Construction Company Site',
+        desc: 'This a website for LCC. LCC is a full-service general contracting company based in Jeddah, Saudi Arabia. We are a team of seasoned professionals who are passionate about delivering high-quality construction services to there clients. They specialize in general contracting, renovation, interior design and execution, painting, electrical works, HVAC, architecture, and custom woodwork and cabinetry. This website also involves a lots of functionalities and pages such as a homepage with a playing video, blog page, portfolio and many more. Its a great project and i bet you would love it.',
+        techTitle: 'Web Technologies Used',
+        technologies: [
+            "React", "Scss", "React-spring", "React-scroll", "Vite", "email-js", "line-awesome"
+        ],
+        links: [
+            {
+                url: "https://construction-website.onrender.com",
+                name: "Demo"
+            },
+            {
+                url: "https://github.com/Femtech-web/construction-website",
+                name: "Github"
+            }
+        ],
+        imageUrl: "/images/construction.png"
+    },
+    {
+        title: 'Sharaz Dashboard',
+        desc: 'Sharaz is a Fictional E-Commerce Company. So i created a Product management Dashboard for there company. The Dashboard consist of several but limited functionalities, with the likes of Topbar chart of total stats of Profit, Expenses, Orders, and Sales. It also contain different charts such as pie, bar, line charts and histogram. it has a customers list page, Product list page and a messaging page. This is a great project i enjoyed working on. you can test it out!',
+        techTitle: 'Web Technologies Used',
+        technologies: [
+            "React", "TailwindCss", "React-Icons", "Recharts", "React-Slick", "Materia-Ui"
+        ],
+        links: [
+            {
+                url: "https://sharaz-dashboard.onrender.com",
+                name: "Demo"
+            },
+            {
+                url: "https://github.com/Femtech-web/sharaz-dashboard",
+                name: "Github"
+            }
+        ],
+        imageUrl: "/images/sharaz.png"
+    },
+    {
         title: 'Crypt Decentralized App',
         desc: 'Crypt Web App is a Decentralized Application which runs on the Blockchain. It was Built for the purpose of Security, Decentralization and trust. It enables Users after Connecting there wallet through Metamask to send Ethers/Tokens to any other Crypto Address anywhere around the world. Metamask enables Users to Sign in there Ethereum Wallet Address to connect to the blockchain for transactions Users can Connect there Wallet, Send Ethereum Ethers and See list of Recent Transactions. There is a Homepage, and Guide page to enable android users install metamask and use the web App on Android Devices.',
         techTitle: 'Web Technologies Used',
@@ -62,25 +100,6 @@ export const projectData = [
         imageUrl: "/images/crypt.png"
     },
     {
-        title: 'Sharaz Dashboard',
-        desc: 'Crypt Web App is a Decentralized Application which runs on the Blockchain. It was Built for the purpose of Security, Decentralization and trust. It enables Users after Connecting there wallet through Metamask to send Ethers/Tokens to any other Crypto Address anywhere around the world. Metamask enables Users to Sign in there Ethereum Wallet Address to connect to the blockchain for transactions Users can Connect there Wallet, Send Ethereum Ethers and See list of Recent Transactions. There is a Homepage, and Guide page to enable android users install metamask and use the web App on Android Devices.',
-        techTitle: 'Web Technologies Used',
-        technologies: [
-            "React", "TailwindCss", "React-Icons", "Recharts", "React-Slick", "Materia-Ui"
-        ],
-        links: [
-            {
-                url: "https://sharaz-dashboard.onrender.com",
-                name: "Demo"
-            },
-            {
-                url: "https://github.com/Femtech-web/sharaz-dashboard",
-                name: "Github"
-            }
-        ],
-        imageUrl: "/images/sharaz.png"
-    },
-    {
         title: 'Bible Web App',
         desc: 'Bible Web App was not much of a beautiful site but rather it was used to implement some really important backend functions such like Authentication and security. It is a web App with which enables Users to Register then login before accessing the main Homepage interface which lists some bible verse foe different situations of Users. Strictly only when Users have logged before they can access the main page. They can also log out. It has a landing page, Register and login page and Homepage.',
         techTitle: 'Web Technologies Used',
@@ -98,7 +117,7 @@ export const projectData = [
             }
         ],
         imageUrl: "/images/bible.png"
-    }
+    }, 
 ]
 
 export const servicesData = [
