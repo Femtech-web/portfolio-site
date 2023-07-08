@@ -34,7 +34,7 @@ const Bio = ({ darkMode }) => {
                     <BsCursorFill className='ml-2'/>
                 </button>
             </a>
-            <a href="https://drive.google.com/file/d/140w2V_tmiIN09DSuxN7JSwdRUCgEBRMM/view?usp=drivesdk" 
+            <a href="https://drive.google.com/file/d/1nh53xc6FWeN2auqqg7tZBUYiechdgIOA/view?usp=drivesdk" 
                 target="_blank" rel="noopener noreferrer"
             >
                 <button className={styles.dwdBtn}>
